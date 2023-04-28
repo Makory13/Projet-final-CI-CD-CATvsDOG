@@ -1,0 +1,15 @@
+version: "3"
+services:
+  vote:
+    build:
+      context: ./vote
+    image: yohansto13/examplevotingapp_vote
+  result:
+    build:
+      context: ./result
+    image: yohansto13/examplevotingapp_result
+  worker:
+    build:
+      context: ./worker
+    image: yohansto13/examplevotingapp_worker
+
